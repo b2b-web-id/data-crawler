@@ -31,7 +31,6 @@ foreach my $page (@{$json->{responseData}->{cursor}->{pages}}) {
   $i++;
   print $i. ". " . $result->{titleNoFormatting} . " - ". $result->{url} . "\n";
  };
- if (!$i) { print "no result!"; };
+ if (!$i) { print "no result!\n"; };
 };
-if (!$p) { print "no result!"; };
-
+if (!$p) { print "no page found!\n"; };
